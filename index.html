@@ -1,19 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="Home Page">
-    <meta name="keywords" content="Sections,Article,Footer">
+    <meta name="keywords" content="Bundoran, Activities, Surfing, Hiking, Coasteering, kayaking">
     <title>Home Page</title>
     <link rel="stylesheet" href="Styles/stylesheet.css">
     <link rel="icon" href="images/favicon.ico" type="image/gif" sizes="16x16">
 </head> 
 
 <body><!-- Body Tag Start of Body Section display on screen-->
-<header>       
-    <p class="webname"><strong>Bundoran Adventures</strong></p>          
+<header> 
+    <br> <!-- Used breaks because when I used margin it created a divide between header and body -->
+    <img class="logo"  src="images/Logo1.jpg" alt="Logo" width="7%"> <br><br><br><br>
+   
+    <h1 class="webname"><strong>Bundoran Adventures</strong></h1>          
 </header>
 <nav>
     <ul>
@@ -25,7 +28,9 @@
     </ul>
 </nav>
 <main><!-- Main Section of content on page -->
-    
+    <a id="top"></a>
+    <a id="topbottom" href="#bottom">Go to Page Bottom</a>
+<h2 style="margin-left: 35%; font-family:Showcard Gothic,fantasy; color: red;">**** This is a college Project ****</h2>  
 <section class="section1"><!-- Section grouping of content -->
     <h3 id="mainText"><b>Bundoran</b></h3>
     <p id="mainText">Bundoran is proud to be the first Donegal stop on the Wild Atlantic Way’s Surf Coast. 
@@ -34,11 +39,17 @@
          to live music to the best in food and drink. Whether you’re travelling with your family, you’re a couple or just 
          on your own and looking for a fun or relaxing few days away. <br>
     </p>
+    <iframe width="90%" height="310" style="margin-left: 5%;" src="https://www.youtube.com/embed/o-oKH-_2_Ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
-<article class="section1"><!-- Article complete or self - contained, independently or reusable, blog -->
 
-<p id="mainText"> <b>About Us</b><br>
-    We provide adventure packages that include activities such as <ul id="maintext">
+<aside class="sectionaside"><!-- Aside grouping of content, use css to render to the side -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18544.64273858121!2d-8.298533591778712!3d54.4791642829356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485efd1499144f51%3A0xa00c7a99731e3e0!2sDrumacrin%2C%20Bundoran%2C%20Co.%20Donegal!5e0!3m2!1sen!2sie!4v1711315468603!5m2!1sen!2sie" width="100%" height="620"  style="border:0.5px solid aliceblue; border-radius: 40px 40px 40px 40px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</aside>
+<article  class="section1"><!-- Article complete or self - contained, independently or reusable, blog -->
+    <h3 id="mainText"><b>About Us</b></h3>
+<p id="mainText"> 
+    We provide adventure packages that include activities such as     
+    <ul id="mainText">
     <li>surfing<br> 
     <li>coasteering<br>
     <li>kayaking<br>
@@ -46,20 +57,28 @@
     <li>hiking<br>
     <li>cycling</li>     
     </ul></p>
+    <img src="Images/sup.jpg" alt="sup" width="90%" height="270" style="margin-left: 5%;">
 </article>
-
-<aside class="sectionaside"><!-- Aside grouping of content, use css to render to the side -->
-   <h3></h3><img src="Images/Pic3.JPG" alt="image" height="250" width="250">
-</aside>
-
 </main>
 
-<footer><!-- Footer grouping for display end of screen -->
-    <p class="copyright">Copyright &copy; 2024 Bundoran Adventures</p>
-    <p class="contactdetails"> <u>Contact Details</u><br>
+<footer ><!-- Footer grouping for display end of screen -->
+    <ul class="links" style="list-style-type: square;">
+        <li class="links"><a class="links" href="index.html">Home</a></li>
+        <li class="links"><a class="links" href="surfing.html">Surfing</a></li>
+        <li class="links"><a class="links" href="hiking.html">Hiking</a></li>
+        <li class="links"><a class="links" href="coasteering.html">Coasteering</a></li>
+        <li class="links"><a class="links" href="enquiries.html">Enquiries</a></li>     
+    </ul>
+    
+    <p class="contactdetails"> <u><b>Contact Details </b></u><br><br>
     Mobile: 087 1234567<br>
     Email: info@bundoranadventures.com<br>
     Address: Sea Rd, Bundoran, Co.Donegal</p>
+
+    <a id="bottom"></a>
+    <a id="topbottom" href="#top">Go to Page Top</a><br><br><br><br><br>
+
+    <p class="copyright">Copyright &copy; 2024 Bundoran Adventures</p>
 </footer>
 
 </body>
